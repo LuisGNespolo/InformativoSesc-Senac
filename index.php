@@ -643,20 +643,13 @@
                             <span class="text-[8px]
                         tracking-[2px]
                         text-[#c9a84f]">
-                                CONTACT
                             </span>
                             <h2 class="serif text-4xl
                         font-bold mt-1">
-                                Formulário de Inscrição
+                                CONTATO
                             </h2>
-                            <p class="text-xs
-                        leading-5
-                        text-[#d8d5cc]
-                        mt-4
-                        max-w-[300px]">
-                                Whether you're a prospective student,
-                                parent, or community member, we'd love
-                                to hear from you.
+                            <p class="text-xs leading-5 text-[#d8d5cc] mt-4 max-w-[300px]">
+                                Precisa de ajuda? Entre em contato conosco!
                             </p>
 
                             <!-- INFORMAÇÕES -->
@@ -721,159 +714,6 @@
                                     </span>
                                 </div>
                             </div>
-                        </div>
-
-                        <!-- FORMULÁRIO -->
-                        <div>
-                            <form action="#" method="POST">
-
-                                <div class="grid grid-cols-2 gap-3">
-
-                                    <!-- NOME -->
-                                    <div>
-                                        <label class="block
-                                    text-[7px]
-                                    text-[#c9a84f]
-                                    uppercase
-                                    mb-1">
-                                            First Name
-                                        </label>
-                                        <input
-                                            type="text"
-                                            name="nome"
-                                            required
-                                            class="w-full
-                                    h-9
-                                    bg-[#162e55]
-                                    border
-                                    border-[#284066]
-                                    px-3
-                                    text-xs
-                                    outline-none
-                                    focus:border-[#c9a84f]">
-                                    </div>
-
-                                    <!-- SOBRENOME -->
-                                    <div>
-                                        <label class="block
-                                    text-[7px]
-                                    text-[#c9a84f]
-                                    uppercase
-                                    mb-1">
-                                            Last Name
-                                        </label>
-                                        <input
-                                            type="text"
-                                            name="sobrenome"
-                                            required
-                                            class="w-full
-                                    h-9
-                                    bg-[#162e55]
-                                    border
-                                    border-[#284066]
-                                    px-3
-                                    text-xs
-                                    outline-none
-                                    focus:border-[#c9a84f]">
-                                    </div>
-                                </div>
-
-                                <!-- EMAIL -->
-                                <div class="mt-4">
-                                    <label class="block
-                                text-[7px]
-                                text-[#c9a84f]
-                                uppercase
-                                mb-1">
-                                        Email
-                                    </label>
-                                    <input
-                                        type="email"
-                                        name="email"
-                                        required
-                                        class="w-full
-                                h-9
-                                bg-[#162e55]
-                                border
-                                border-[#284066]
-                                px-3
-                                text-xs
-                                outline-none
-                                focus:border-[#c9a84f]">
-                                </div>
-
-                                <!-- TIPO -->
-                                <div class="mt-4">
-                                    <label class="block
-                                text-[7px]
-                                text-[#c9a84f]
-                                uppercase
-                                mb-1">
-                                        Inquiry Type
-                                    </label>
-                                    <select
-                                        name="tipo"
-                                        class="w-full
-                                h-9
-                                bg-[#162e55]
-                                border
-                                border-[#284066]
-                                px-3
-                                text-xs">
-                                        <option>
-                                            Admissions
-                                        </option>
-                                        <option>
-                                            Events
-                                        </option>
-                                        <option>
-                                            General Information
-                                        </option>
-                                    </select>
-                                </div>
-
-                                <!-- MENSAGEM -->
-                                <div class="mt-4">
-                                    <label class="block
-                                text-[7px]
-                                text-[#c9a84f]
-                                uppercase
-                                mb-1">
-                                        Message
-                                    </label>
-                                    <textarea
-                                        name="mensagem"
-                                        rows="4"
-                                        required
-                                        class="w-full
-                                bg-[#162e55]
-                                border
-                                border-[#284066]
-                                px-3
-                                py-2
-                                text-xs
-                                outline-none
-                                resize-none
-                                focus:border-[#c9a84f]"></textarea>
-                                </div>
-
-                                <!-- BOTÃO -->
-                                <button
-                                    type="submit"
-                                    class="w-full
-                            h-9
-                            mt-4
-                            bg-[#d0ad4e]
-                            text-[#0d2348]
-                            text-[8px]
-                            font-bold
-                            uppercase
-                            tracking-wider
-                            hover:bg-[#e0c16a]
-                            transition">
-                                    Send Message
-                                </button>
-                            </form>
                         </div>
                     </div>
                 </div>
