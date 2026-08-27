@@ -276,6 +276,18 @@
       max-width: 96rem;
     }
   }
+  .m-\[60px\] {
+    margin: 60px;
+  }
+  .m-\[80px\] {
+    margin: 80px;
+  }
+  .m-\[100px\] {
+    margin: 100px;
+  }
+  .m-\[180px\] {
+    margin: 180px;
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -300,9 +312,6 @@
   .mt-14 {
     margin-top: calc(var(--spacing) * 14);
   }
-  .mb-1 {
-    margin-bottom: var(--spacing);
-  }
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
   }
@@ -314,12 +323,6 @@
   }
   .ml-2 {
     margin-left: calc(var(--spacing) * 2);
-  }
-  .ml-4 {
-    margin-left: calc(var(--spacing) * 4);
-  }
-  .ml-5 {
-    margin-left: calc(var(--spacing) * 5);
   }
   .ml-8 {
     margin-left: calc(var(--spacing) * 8);
@@ -339,6 +342,9 @@
   .inline-block {
     display: inline-block;
   }
+  .table {
+    display: table;
+  }
   .size-4 {
     width: calc(var(--spacing) * 4);
     height: calc(var(--spacing) * 4);
@@ -346,9 +352,6 @@
   .size-7 {
     width: calc(var(--spacing) * 7);
     height: calc(var(--spacing) * 7);
-  }
-  .h-9 {
-    height: calc(var(--spacing) * 9);
   }
   .h-\[6px\] {
     height: 6px;
@@ -407,17 +410,17 @@
   .flex-1 {
     flex: 1;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .cursor-pointer {
     cursor: pointer;
   }
-  .resize-none {
-    resize: none;
+  .resize {
+    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-  .grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .flex-col {
     flex-direction: column;
@@ -442,9 +445,6 @@
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
-  }
-  .gap-3 {
-    gap: calc(var(--spacing) * 3);
   }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
@@ -517,12 +517,6 @@
   .bg-\[\#142c52\] {
     background-color: #142c52;
   }
-  .bg-\[\#162e55\] {
-    background-color: #162e55;
-  }
-  .bg-\[\#d0ad4e\] {
-    background-color: #d0ad4e;
-  }
   .bg-\[\#f5f2eb\] {
     background-color: #f5f2eb;
   }
@@ -534,6 +528,9 @@
   }
   .bg-\[\#faf9f5\] {
     background-color: #faf9f5;
+  }
+  .bg-black {
+    background-color: var(--color-black);
   }
   .bg-black\/50 {
     background-color: color-mix(in srgb, #000 50%, transparent);
@@ -589,6 +586,9 @@
   }
   .p-8 {
     padding: calc(var(--spacing) * 8);
+  }
+  .p-\[50px\] {
+    padding: 50px;
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
@@ -671,9 +671,6 @@
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
   }
-  .text-\[7px\] {
-    font-size: 7px;
-  }
   .text-\[8px\] {
     font-size: 8px;
   }
@@ -730,9 +727,6 @@
   .tracking-wider {
     --tw-tracking: var(--tracking-wider);
     letter-spacing: var(--tracking-wider);
-  }
-  .text-\[\#0d2348\] {
-    color: #0d2348;
   }
   .text-\[\#4d4d4d\] {
     color: #4d4d4d;
@@ -794,9 +788,16 @@
   .uppercase {
     text-transform: uppercase;
   }
+  .underline {
+    text-decoration-line: underline;
+  }
   .shadow {
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .transition {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
@@ -832,9 +833,6 @@
       --tw-scale-z: 105%;
       scale: var(--tw-scale-x) var(--tw-scale-y);
     }
-    .hover\:bg-\[\#e0c16a\]:hover {
-      background-color: #e0c16a;
-    }
     .hover\:bg-blue-700:hover {
       background-color: var(--color-blue-700);
     }
@@ -850,9 +848,6 @@
     .hover\:text-white:hover {
       color: var(--color-white);
     }
-  }
-  .focus\:border-\[\#c9a84f\]:focus {
-    border-color: #c9a84f;
   }
   .focus\:outline-none:focus {
     --tw-outline-style: none;
@@ -1167,6 +1162,11 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -1217,6 +1217,7 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-outline-style: solid;
       --tw-duration: initial;
       --tw-scale-x: 1;
       --tw-scale-y: 1;
