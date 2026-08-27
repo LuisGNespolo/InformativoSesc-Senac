@@ -701,7 +701,6 @@
                                 </div>
                             </div>
                         </div>
-<<<<<<< HEAD
                         <!-- FORMULÁRIO -->
                         <div>
                             <form action="#" method="POST">
@@ -852,8 +851,6 @@
                                 </button>
                             </form>
                         </div>
-=======
->>>>>>> 7da4fb4a3720f84ba1f27ba3463dc2055242a96b
                     </div>
                 </div>
             </section>
@@ -869,5 +866,4 @@
         </div>
     </footer>
 </body>
-
 </html>
