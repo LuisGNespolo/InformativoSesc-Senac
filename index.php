@@ -643,20 +643,13 @@
                             <span class="text-[8px]
                         tracking-[2px]
                         text-[#c9a84f]">
-                                CONTACT
                             </span>
                             <h2 class="serif text-4xl
                         font-bold mt-1">
-                                Formulário de Inscrição
+                                CONTATO
                             </h2>
-                            <p class="text-xs
-                        leading-5
-                        text-[#d8d5cc]
-                        mt-4
-                        max-w-[300px]">
-                                Whether you're a prospective student,
-                                parent, or community member, we'd love
-                                to hear from you.
+                            <p class="text-xs leading-5 text-[#d8d5cc] mt-4 max-w-[300px]">
+                                Precisa de ajuda? Entre em contato conosco!
                             </p>
 
                             <!-- INFORMAÇÕES -->
@@ -722,6 +715,7 @@
                                 </div>
                             </div>
                         </div>
+<<<<<<< HEAD
                         <!-- FORMULÁRIO -->
                         <div>
                             <form action="#" method="POST">
@@ -872,6 +866,8 @@
                                 </button>
                             </form>
                         </div>
+=======
+>>>>>>> 7da4fb4a3720f84ba1f27ba3463dc2055242a96b
                     </div>
                 </div>
             </section>
