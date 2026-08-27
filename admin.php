@@ -3,9 +3,7 @@
 require_once "conexao.php";
 
 $sql = "SELECT * FROM inscricoes ORDER BY data_envio DESC";
-
 $stmt = $pdo->query($sql);
-
 $inscricoes = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
@@ -68,5 +66,4 @@ $inscricoes = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </div>
     </main>
 </body>
-
 </html>

@@ -23,7 +23,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 (:nome, :sobrenome, :email, :senha)";
 
         $stmt = $pdo->prepare($sql);
-
         $stmt->execute([
             ":nome" => $nome,
             ":sobrenome" => $sobrenome,
@@ -36,7 +35,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     } catch (PDOException $erro) {
 
         $mensagem = "Este email já está cadastrado.";
-
     }
 }
 ?>

@@ -18,7 +18,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 (:nome, :sobrenome, :email, :tipo, :mensagem)";
 
         $stmt = $pdo->prepare($sql);
-
         $stmt->bindParam(":nome", $nome);
         $stmt->bindParam(":sobrenome", $sobrenome);
         $stmt->bindParam(":email", $email);
