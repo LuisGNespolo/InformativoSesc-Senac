@@ -722,13 +722,10 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- FORMULÁRIO -->
                         <div>
                             <form action="#" method="POST">
-
                                 <div class="grid grid-cols-2 gap-3">
-
                                     <!-- NOME -->
                                     <div>
                                         <label class="block
