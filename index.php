@@ -72,9 +72,6 @@
                     </ul>
                 </div>
                 <div class="flex items-center gap-4 lg:ml-4">
-                    <a href="#"
-                        class="py-2 px-3.5 text-sm rounded-md font-semibold cursor-pointer text-white bg-orange-500 hover:bg-orange-600 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500">Entrar
-                    </a>
                     <button type="button" aria-controls="collapseMenu" aria-expanded="false" aria-haspopup="true" id="toggleOpen"
                         class="cursor-pointer lg:hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">
                         <span class="sr-only">Open main menu</span>
@@ -691,6 +688,11 @@
                                     </svg>
                                 </span>
                             </div>
+                        </div>
+                        <div class="mt-6">
+                            <span class="text-base text-[#c9a84f] uppercase">
+                                Administradores
+                            </span>
                         </div>
                     </div>
                 </div>
