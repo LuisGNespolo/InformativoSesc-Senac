@@ -11,15 +11,11 @@
 <body>
     <header>
         <nav
-            class="flex py-2 px-4 md:px-8 bg-[#0e2347] min-h-[68px] relative z-20"
-            aria-label="Main navigation">
+            class="flex bg-[#0e2347] min-h-[68px] relative" aria-label="Main navigation">
             <div class="max-w-7xl mx-auto flex flex-wrap items-center gap-4 w-full">
-                <div class="flex-1 flex">
-                    <a href="#"
-                        class="min-w-9 inline-block focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">
-                        <h1 class="text-xl font-bold text-white">Ensino Médio SESC SENAC</h1>
-                    </a>
-                </div>
+                <a href="#" class="min-w-9 inline-block focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 w-40 h-6">
+                    <img src="./assets/img/EMI-logo.png" class="">
+                </a>
                 <div id="collapseMenu" tabindex="-1"
                     class="hidden lg:block max-lg:bg-white dark:max-lg:bg-neutral-900 max-lg:border-l max-lg:border-slate-300 dark:max-lg:border-neutral-700 max-lg:w-1/2 max-lg:fixed max-lg:top-0 max-lg:right-0 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto max-sm:w-full z-50 outline-none">
                     <div
@@ -128,7 +124,7 @@
                                 Ensino Médio Integrado ao Técnico em Informática
                             </p>
                             <h1 class="mt-5 text-5xl md:text-6xl font-bold text-[#071d41] leading-tight">
-                                O Ensino Médio
+                                <img src="./assets/img/EMI-logo-verde (2) 2.png" class="w-90">
                             </h1>
                         </div>
                         <div class="lg:col-span-2">
@@ -690,9 +686,9 @@
                             </div>
                         </div>
                         <div class="mt-6">
-                            <span class="text-base text-[#c9a84f] uppercase">
+                            <a class="text-base text-[#c9a84f] uppercase">
                                 Administradores
-                            </span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -709,4 +705,5 @@
         </div>
     </footer>
 </body>
+
 </html>
