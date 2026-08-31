@@ -636,11 +636,11 @@
             </section>
             <section id="inscricao" class="bg-[#0d2348] text-white py-20  ">
                 <div class="columns-2xl gap-14">
-                    <div class="card-left p-10 flex  flex-col">
+                    <div class="card-left p-10 flex flex-col">
                         <h2 class="text-4xl font-bold mt-1">
                             CONTATO
                         </h2>
-                        <p class="text-xl text-[#d8d5cc] mt-4">
+                        <p class="text-xl text-[#d8d5cc] mt-4 mb-4">
                             Precisa de ajuda? Entre em contato conosco!
                         </p>
                         <div class="mt-6">
@@ -652,8 +652,6 @@
                                     Rua Dr. José Pinto Rebelo Júnior / n° 91, Matinhos - PR
                                 </span>
                             </div>
-                        </div>
-                        <div class="mt-6">
                             <div class="border-b border-[#284066] py-3">
                                 <span class="text-base text-[#c9a84f] uppercase">
                                     Telefone SESC
