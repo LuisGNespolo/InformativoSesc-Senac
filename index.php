@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -9,11 +9,10 @@
 </head>
 
 <body>
-    <header>
-        <nav
-            class="flex bg-[#0e2347] min-h-[68px] relative" aria-label="Main navigation">
-            <div class="max-w-7xl mx-auto flex flex-wrap items-center gap-4 w-full">
-                <a href="#" class="min-w-9 inline-block focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 w-40 h-6">
+    <header class="fixed top-0 left-0 w-full z-50">
+        <nav class="flex bg-[#0e2347] min-h-[68px] relative" aria-label="Main navigation">
+            <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4 w-full">
+                <a href="#" class="min-w-9 inline-block focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 w-40 flex">
                     <img src="./assets/img/EMI-logo.png" class="">
                 </a>
                 <div id="collapseMenu" tabindex="-1"
@@ -46,8 +45,8 @@
                                 class="hover:text-orange-500 focus:outline-none focus-visible:ring-2 rounded">Clubes</a>
                         </li>
                         <li>
-                            <a href="#feiras"
-                                class="hover:text-orange-500 focus:outline-none focus-visible:ring-2 rounded">Feiras</a>
+                            <a href="#projetos"
+                                class="hover:text-orange-500 focus:outline-none focus-visible:ring-2 rounded">Projetos</a>
                         </li>
                         <li>
                             <a href="#extra"
@@ -129,7 +128,7 @@
                         </div>
                         <div class="lg:col-span-2">
                             <p class="text-xl md:text-2xl leading-relaxed text-[#4d4d4d] max-w-4xl">
-                                Aqui, a formação vai além dos conteúdos tradicionais. A teoria e a prática caminham juntas para desenvolver competências que fazem a diferença na vida pessoal e profissional.
+                                Aqui, a formação vai além dos conteúdos tradicionais. A teoria e a prática caminham juntas para desenvolver competências que fazem a diferença na vida pessoal, profissional e acadêmica.
                             </p>
                         </div>
                     </div>
@@ -212,8 +211,8 @@
                         [
                             'categoria' => 'Clube de Ciências',
                             'numero' => '#01',
-                            'titulo' => 'Clube de Ciências BrisaMAR',
-                            'descricao' => 'Students explore the phases of mitosis — prophase, metaphase, anaphase, and telophase — through live microscopy sessions and animated cell models.',
+                            'titulo' => 'Clube de Ciências Brisa MAR',
+                            'descricao' => 'No Clube de ciências Brisa Mar, os estudantes realizam a elaboração e produção de projetos interdiciplinares, além de aulas de campo, e cursos especiais.',
                             'nivel' => 'Grade 10',
                             'duracao' => '3 weeks',
                             'cor' => '#7ED9FC',
@@ -223,7 +222,7 @@
                             'categoria' => 'Literatura',
                             'numero' => '#04',
                             'titulo' => 'Clube do Livro',
-                            'descricao' => 'An in-depth examination of industrialization in Britain and its spread worldwide, covering labor movements, urbanization, and long-term economic consequences.',
+                            'descricao' => 'No Clube do Livro, os estudantes discutem e analisam obras literárias, estimulando o pensamento crítico, interpretação textual e reflexões socioculturais.',
                             'nivel' => 'Grade 9',
                             'duracao' => '4 weeks',
                             'cor' => '#D6A20F',
@@ -233,7 +232,7 @@
                             'categoria' => 'Informativo',
                             'numero' => '#05',
                             'titulo' => 'Clube Jornal Escolar',
-                            'descricao' => 'An in-depth examination of industrialization in Britain and its spread worldwide, covering labor movements, urbanization, and long-term economic consequences.',
+                            'descricao' => 'No Jornal Escolar, nossos estudantes desenvolvem matérias sobre os projetos e eventos escolares.',
                             'nivel' => 'Grade 9',
                             'duracao' => '4 weeks',
                             'cor' => '#0021E0',
@@ -259,16 +258,13 @@
                                 ">
                                         <?= $clube['categoria'] ?>
                                     </span>
-                                    <span class="text-xs text-[#555]">
-                                        <?= $clube['numero'] ?>
-                                    </span>
                                 </div>
                                 <!-- Título -->
                                 <h3 class="mt-4 text-xl md:text-2xl font-bold text-[#071d41] leading-tight">
                                     <?= $clube['titulo'] ?>
                                 </h3>
                                 <!-- Descrição -->
-                                <p class="mt-8 text-[15px] leading-relaxed text-[#666]">
+                                <p class="mt-8 text-[15px] leading-relaxed text-[#666] text-justify">
                                     <?= $clube['descricao'] ?>
                                 </p>
                             </article>
@@ -276,37 +272,37 @@
                     </div>
                 </div>
             </section>
-            <section class="bg-[#f8f5f0] px-5 md:px-10 lg:px-16 py-16" name="feiras" id="feiras"> <!-- Título -->
+            <section class="bg-[#f8f5f0] px-5 md:px-10 lg:px-16 py-16" name="projetos" id="projetos"> <!-- Título -->
                 <div class="max-w-[1200px] mx-auto">
-                    <h2 class="mt-5 text-5xl md:text-6xl font-bold text-[#071d41] leading-tight"> Feiras </h2>
+                    <h2 class="mt-5 text-5xl md:text-6xl font-bold text-[#071d41] leading-tight"> Projetos </h2>
                 </div> <!-- Cards -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-[1200px] mx-auto mt-8"> <!-- Card 1 -->
                     <div class="relative h-[280px] overflow-hidden group"> <img src="./assets/img/image copy 2.png" alt="Semana Literaria" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#061c3c] via-[#061c3c]/30 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-4 text-white">
-                            <h2 class="text-base font-bold">Feira Cultural</h2>
-                            <p class="text-sm text-yellow-400 mt-1">9 a 15 de agosto</p>
+                            <h2 class="text-base font-bold">Semana Cultural</h2>
+                            <p class="text-sm text-yellow-400 mt-1">...</p>
                         </div>
                     </div> <!-- Card 2 -->
-                    <div class="relative h-[280px] overflow-hidden group"> <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=700&q=80" alt="Atletismo" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="relative h-[280px] overflow-hidden group"> <img src="./assets/img/empreendedorismo.jpg" alt="Atletismo" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#061c3c] via-[#061c3c]/30 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-4 text-white">
                             <h2 class="text-base font-bold">Feira do Empreendedorismo</h2>
-                            <p class="text-sm text-yellow-400 mt-1"> 32 times universitários </p>
+                            <p class="text-sm text-yellow-400 mt-1">...</p>
                         </div>
                     </div> <!-- Card 3 -->
                     <div class="relative h-[280px] overflow-hidden group"> <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=700&q=80" alt="Artes e Teatro" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#061c3c] via-[#061c3c]/20 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-4 text-white">
                             <h2 class="text-base font-bold">Feira do Conhecimento</h2>
-                            <p class="text-sm text-yellow-400 mt-1"> 3 produções anuais </p>
+                            <p class="text-sm text-yellow-400 mt-1">...</p>
                         </div>
                     </div> <!-- Card 4 -->
                     <div class="relative h-[280px] overflow-hidden group"> <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=700&q=80" alt="Serviço Comunitário" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#061c3c] via-[#061c3c]/30 to-transparent"></div>
                         <div class="absolute bottom-0 left-0 p-4 text-white">
                             <h2 class="text-base font-bold">Projeto Integrador</h2>
-                            <p class="text-sm text-yellow-400 mt-1"> 12.000 horas/ano </p>
+                            <p class="text-sm text-yellow-400 mt-1">...</p>
                         </div>
                     </div>
                 </div>
