@@ -442,8 +442,7 @@
 
                         <!-- PROFESSOR 1 -->
                         <article>
-                            <img
-                                src="img/faculty1.jpg"
+                            <img    src="img/faculty1.jpg"
                                 alt="Professor"
                                 class="w-full h-[200px] object-cover">
                             <span class="block text-[8px]
