@@ -8,6 +8,7 @@ require_once 'dados.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/dist/output.css">
+    <link rel="stylesheet" href="./assets/css/syle.css">
     <title>Página Institucional</title>
 </head>
 
@@ -83,34 +84,34 @@ require_once 'dados.php';
     <main>
         <div class="container w-full mx-auto max-w-full">
             <section class="relative h-[500px] md:h-[600px] overflow-hidden" name="video">
-                <video
-                    class="absolute inset-0 w-full h-full object-cover"
-                    autoplay
-                    muted
-                    loop
-                    playsinline>
-                    <source src="seu-video.mp4" type="video/mp4" />
+                <video class="absolute inset-0 w-full h-full object-cover" autoplay muted loop playsinline>
+                    <source src="./senacVideo.webm" type="video/webm">
                     Seu navegador não suporta vídeo.
                 </video>
-                <!-- Overlay escuro -->
-                <div class="absolute inset-0 bg-black/50">
-                    <img src="./assets/img/image.png" alt="Imagem de destaque" class="w-full h-full object-cover">
-                </div>
-                <!-- Texto sobre o vídeo -->
+                <div class="absolute inset-0 bg-black/50"></div>
+
+                <!-- Conteúdo sobre o vídeo -->
                 <div class="relative z-10 flex items-center justify-center h-full px-6 text-center">
                     <div class="max-w-4xl">
+
                         <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">
                             Bem Vindo ao Ensino Médio SESC SENAC
                         </h1>
+
                         <p class="mt-4 text-lg md:text-xl text-white/90">
                             Explore nossas oportunidades acadêmicas e extracurriculares
                             para desenvolver habilidades essenciais para o futuro.
                         </p>
-                        <a href="#sobre-nos" class="inline-block mt-6 px-6 py-3 rounded-md bg-blue-600 hover:bg-blue-700 text-white font-semibold transition">
+
+                        <a
+                            href="#sobre-nos"
+                            class="inline-block mt-6 px-6 py-3 rounded-md bg-blue-600 hover:bg-blue-700 text-white font-semibold transition">
                             Sobre nós
                         </a>
+
                     </div>
                 </div>
+
             </section>
             <section class="bg-[#f8f5f0] px-5 md:px-10 lg:px-16 py-12" name="sobre-nos" id="sobre-nos">
                 <div class="max-w-7xl mx-auto">
@@ -355,22 +356,23 @@ require_once 'dados.php';
                         <button
                             id="prevProfessor"
                             type="button"
-                            class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 bg-white shadow-lg rounded-full w-10 h-10 flex items-center justify-center hover:bg-slate-100 transition">
+                            class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 z-10 bg-white shadow-lg rounded-full w-10 h-10 flex items-center justify-center hover:bg-slate-100 transition">
                             ←
                         </button>
                         <div class="overflow-hidden">
                             <div
                                 id="professoresCarousel"
                                 class="flex gap-4 transition-transform duration-500 ease-in-out">
-                                <?php foreach ($professores as $professor) { 
-                                    ?>
+                                <?php foreach ($professores as $professor) { ?>
                                     <div
-                                        class="relative h-[280px] min-w-full sm:min-w-[calc(50%-8px)] lg:min-w-[calc(25%-12px)] overflow-hidden group">
-                                        <img src="<?= $professor['imagem'] ?>" alt="<?= $professor['alt'] ?>"
-                                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                                        <div
-                                            class="absolute inset-0 bg-gradient-to-t from-[#061c3c] via-[#061c3c]/30 to-transparent"></div>
-                                        <div class="absolute bottom-0 left-0 p-4 text-white">
+                                        class="relative h-[280px] min-w-full sm:min-w-[calc(50%-8px)] lg:min-w-[calc(25%-12px)] overflow-hidden group cursor-pointer"
+                                        onclick="this.querySelector('.descricao').classList.toggle('aberta')">
+                                        <img
+                                            src="<?= $professor['imagem'] ?>"
+                                            alt="<?= $professor['alt'] ?>"
+                                            class="absolute inset-0 w-full h-full object-cover">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-[#061c3c] via-[#061c3c]/30 to-transparent"></div>
+                                        <div class="absolute bottom-0 left-0 p-4 text-white z-10">
                                             <h2 class="text-base font-bold">
                                                 <?= $professor['nome'] ?>
                                             </h2>
@@ -378,22 +380,27 @@ require_once 'dados.php';
                                                 <?= $professor['materia'] ?>
                                             </p>
                                         </div>
+                                        <div class="descricao z-20 bg-[#061c3c] p-5 text-white">
+                                            <h2 class="text-xl font-bold">
+                                                <?= $professor['nome'] ?>
+                                            </h2>
+                                            <p class="text-sm text-yellow-400 mt-1">
+                                                <?= $professor['materia'] ?>
+                                            </p>
+                                            <p class="mt-4 text-sm leading-relaxed">
+                                                <?= $professor['descricao'] ?>
+                                            </p>
+                                        </div>
                                     </div>
                                 <?php } ?>
                             </div>
                         </div>
-
-                        <!-- Botão próximo -->
                         <button
                             id="nextProfessor"
                             type="button"
-                            class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10
-                bg-white shadow-lg rounded-full w-10 h-10
-                flex items-center justify-center
-                hover:bg-slate-100 transition">
+                            class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 z-10 bg-white shadow-lg rounded-full w-10 h-10 flex items-center justify-center hover:bg-slate-100 transition">
                             →
                         </button>
-
                     </div>
             </section>
             <section id="contato" class="bg-[#0d2348] text-white py-20  ">

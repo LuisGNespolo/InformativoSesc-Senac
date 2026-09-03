@@ -1,0 +1,8 @@
+# Dependências
+node_modules/
+
+# Arquivos compilados
+assets/dist/
+
+# Vídeo pesado
+senacVideo.webm

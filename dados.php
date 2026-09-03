@@ -147,118 +147,135 @@ $professores = [
         'nome' => 'João Gomes',
         'materia' => 'Estagiário em Informática',
         'imagem' => './assets/img/professor1.jpg',
-        'alt' => 'Estagiário em Informática'
+        'alt' => 'Estagiário em Informática',
+        'descricao' => 'Formando em Análise e Desenvolvimento de Sistemas'
     ],
     [
         'numero' => '#02',
         'nome' => 'Evandro',
         'materia' => 'História',
         'imagem' => './assets/img/professor2.jpg',
-        'alt' => 'Professor de História'
+        'alt' => 'Professor de História',
+        'descricao' => ''
     ],
     [
         'numero' => '#03',
         'nome' => 'Pedro',
         'materia' => 'Geografia',
         'imagem' => './assets/img/professor3.jpg',
-        'alt' => 'Professor de Geografia'
+        'alt' => 'Professor de Geografia',
+        'descricao' => ''
     ],
     [
         'numero' => '#04',
         'nome' => 'Joana',
         'materia' => 'Português',
         'imagem' => './assets/img/professora1.jpg',
-        'alt' => 'Professora de Português'
+        'alt' => 'Professora de Português',
+        'descricao' => ''
     ],
     [
         'numero' => '#05',
         'nome' => 'Francielly',
         'materia' => 'Educação Física',
         'imagem' => './assets/img/professora2.jpg',
-        'alt' => 'Professora de Educação física'
+        'alt' => 'Professora de Educação física',
+        'descricao' => ''
     ],
     [
         'numero' => '#06',
         'nome' => 'Edna',
         'materia' => 'Filosofia',
         'imagem' => './assets/img/professora3.jpg',
-        'alt' => 'Professora de Filosofia'
+        'alt' => 'Professora de Filosofia',
+        'descricao' => ''
     ],
     [
         'numero' => '#07',
         'nome' => 'Gulherme',
         'materia' => 'Artes',
         'imagem' => './assets/img/professor4.jpg',
-        'alt' => 'Professor de Artes'
+        'alt' => 'Professor de Artes',
+        'descricao' => ''
     ],
     [
         'numero' => '#08',
         'nome' => 'Hayley',
         'materia' => 'Matemática',
         'imagem' => './assets/img/professora4.jpg',
-        'alt' => 'Professora de Matemática'
+        'alt' => 'Professora de Matemática',
+        'descricao' => ''
     ],
     [
         'numero' => '#09',
         'nome' => 'Vânia',
         'materia' => 'Sociologia',
         'imagem' => './assets/img/professora5.jpg',
-        'alt' => 'Professora de Sociologia'
+        'alt' => 'Professora de Sociologia',
+        'descricao' => ''
     ],
     [
         'numero' => '#10',
         'nome' => 'Raquel',
         'materia' => 'Biologia',
         'imagem' => './assets/img/professora6.jpg',
-        'alt' => 'Professora de Biologia'
+        'alt' => 'Professora de Biologia',
+        'descricao' => ''
     ],
     [
         'numero' => '#11',
         'nome' => 'Tamara',
         'materia' => 'Inglês',
         'imagem' => './assets/img/professora7.jpg',
-        'alt' => 'Professora de Inglês'
+        'alt' => 'Professora de Inglês',
+        'descricao' => ''
     ],
     [
         'numero' => '#12',
         'nome' => 'André',
         'materia' => 'Química',
         'imagem' => './assets/img/professor5.jpg',
-        'alt' => 'Professor de Química'
+        'alt' => 'Professor de Química',
+        'descricao' => ''
     ],
     [
         'numero' => '#13',
         'nome' => 'Antônio',
         'materia' => 'Empreendendo ideias',
         'imagem' => './assets/img/professor6.jpg',
-        'alt' => 'Professor de Empreendendo ideias'
+        'alt' => 'Professor de Empreendendo ideias',
+        'descricao' => ''
     ],
     [
         'numero' => '#14',
         'nome' => 'Jane',
         'materia' => 'Projeto de vida',
         'imagem' => './assets/img/professora8.jpg',
-        'alt' => 'Professora de Projeto de vida'
+        'alt' => 'Professora de Projeto de vida',
+        'descricao' => ''
     ],
     [
         'numero' => '#15',
         'nome' => 'Janaina',
         'materia' => 'Inglês técnico',
         'imagem' => './assets/img/professora9.jpg',
-        'alt' => 'Professora de Inglês técnico'
+        'alt' => 'Professora de Inglês técnico',
+        'descricao' => ''
     ],
     [
         'numero' => '#16',
         'nome' => 'Bruno',
         'materia' => 'Técnico em Informática',
         'imagem' => './assets/img/professor7.jpg',
-        'alt' => 'Instrutor de Informática'
+        'alt' => 'Instrutor de Informática',
+        'descricao' => ''
     ],
     [
         'numero' => '#17',
         'nome' => 'Marcelo',
         'materia' => 'Técnico em Informática',
         'imagem' => './assets/img/professor8.jpg',
-        'alt' => 'Instrutor de informática'
+        'alt' => 'Instrutor de informática',
+        'descricao' => ''
     ],
 ];

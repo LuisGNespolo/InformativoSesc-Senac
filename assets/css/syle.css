@@ -1,0 +1,11 @@
+.descricao {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -100%;
+    transition: bottom 0.5s ease-in-out;
+}
+
+.descricao.aberta {
+    bottom: 0;
+}
