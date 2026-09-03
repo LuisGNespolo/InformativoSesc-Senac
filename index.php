@@ -204,12 +204,12 @@ require_once 'dados.php';
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">
                         <?php $contadorClube = 0;
-                        foreach ($clubes as $clube){ 
-                            if ($contadorClube >= 3){
+                        foreach ($clubes as $clube) {
+                            if ($contadorClube >= 3) {
                                 break;
                             }
                             $contadorClube++
-                            ?>
+                        ?>
                             <article
                                 class="relative bg-[#faf8f4] border border-[#ddd8d0] p-6 md:p-7 min-h-[310px] flex flex-col">
                                 <div
@@ -243,24 +243,24 @@ require_once 'dados.php';
                 <div class="max-w-[1200px] mx-auto">
                     <h2 class="mt-5 text-5xl md:text-6xl font-bold text-[#071d41] leading-tight"> Projetos </h2>
                 </div>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-[1200px] mx-auto mt-8">
-                        <?php $contadorProjetos = 0;
-                        foreach ($projetos as $projeto){
-                            if ($contadorProjetos >= 4){
-                                break;
-                            }
-                            $contadorProjetos++
-                            ?>
-                            <div class="relative h-[280px] overflow-hidden group">
-                                <img src="<?= $projeto['imagem']?>" alt="<?= $projeto['alt']?>" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-[1200px] mx-auto mt-8">
+                    <?php $contadorProjetos = 0;
+                    foreach ($projetos as $projeto) {
+                        if ($contadorProjetos >= 4) {
+                            break;
+                        }
+                        $contadorProjetos++
+                    ?>
+                        <div class="relative h-[280px] overflow-hidden group">
+                            <img src="<?= $projeto['imagem'] ?>" alt="<?= $projeto['alt'] ?>" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                             <div class="absolute inset-0 bg-gradient-to-t from-[#061c3c] via-[#061c3c]/30 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 p-4 text-white">
-                            <h2 class="text-base font-bold"><?= $projeto['titulo']?></h2>
-                            <p class="text-sm text-yellow-400 mt-1"><?= $projeto['descricao']?></p>
-                        </div>
+                            <div class="absolute bottom-0 left-0 p-4 text-white">
+                                <h2 class="text-base font-bold"><?= $projeto['titulo'] ?></h2>
+                                <p class="text-sm text-yellow-400 mt-1"><?= $projeto['descricao'] ?></p>
                             </div>
-                        <?php } ?>
                         </div>
+                    <?php } ?>
+                </div>
             </section>
             <section id="extra" class="bg-[#0e2347] text-white py-20" name="extracurriculares">
                 <div class="max-w-[1200px] mx-auto px-6">
@@ -273,11 +273,11 @@ require_once 'dados.php';
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-14">
                         <?php $contadorExtracurricular = 0;
-                        foreach ($extra as $extras){ 
-                        if ($contadorExtracurricular >= 3) {
-                            break;
-                        }
-                        $contadorExtracurricular++;
+                        foreach ($extra as $extras) {
+                            if ($contadorExtracurricular >= 3) {
+                                break;
+                            }
+                            $contadorExtracurricular++;
                         ?>
                             <article class="relative bg-[#faf8f4] border border-[#ddd8d0] p-6 md:p-7 min-h-[200px] flex flex-col">
                                 <div
@@ -300,131 +300,12 @@ require_once 'dados.php';
                                     <?= $extras['descricao'] ?>
                                 </p>
                             </article>
-<<<<<<< HEAD
-
-                        <?php endforeach; ?>
+                        <?php }; ?>
 
                     </div>
 
                 </div>
 
-            </section>
-            <section id="eventos" class="bg-[#faf9f5] py-20" name="eventos" id="eventos">
-                <div class="max-w-[1050px] mx-auto px-6">
-
-                    <!-- CABEÇALHO -->
-                    <div class="flex flex-col md:flex-row
-                justify-between items-start md:items-end
-                mb-10">
-                        <div>
-                            <span class="text-[9px]
-                        tracking-[2px]
-                        text-[#c8a64d]">
-                                FACULTY
-                            </span>
-                            <h2 class="serif text-4xl font-bold leading-none mt-2">
-                                Eventos proporcionados pela<br>
-                                instituição
-                            </h2>
-                        </div>
-
-                        <p class="text-xs leading-5
-                    text-gray-500
-                    max-w-[210px]
-                    mt-5 md:mt-0">
-                            Our faculty hold advanced degrees from
-                            leading universities. 75% have active
-                            research or creative practices in their fields.
-                        </p>
-                    </div>
-
-                    <!-- PROFESSORES -->
-                    <div class="grid grid-cols-1 sm:grid-cols-2
-                lg:grid-cols-4 gap-5">
-
-                        <!-- PROFESSOR 1 -->
-                        <article>
-                            <img    src="img/faculty1.jpg"
-                                alt="Professor"
-                                class="w-full h-[200px] object-cover">
-                            <span class="block text-[8px]
-                        text-[#c5a347]
-                        uppercase mt-2">
-                                Head of Sciences
-                            </span>
-                            <h3 class="serif text-sm font-bold">
-                                Dr. Amara Ortiz
-                            </h3>
-                            <p class="text-[8px]
-                        text-gray-600 mt-1">
-                                “Curiosity is the engine of discovery.”
-                            </p>
-                        </article>
-
-                        <!-- PROFESSOR 2 -->
-                        <article>
-                            <img
-                                src="img/faculty2.jpg"
-                                alt="Professor"
-                                class="w-full h-[200px] object-cover">
-                            <span class="block text-[8px]
-                        text-[#c5a347]
-                        uppercase mt-2">
-                                Head of Humanities
-                            </span>
-                            <h3 class="serif text-sm font-bold">
-                                Prof. Rachel Hart
-                            </h3>
-                            <p class="text-[8px]
-                        text-gray-600 mt-1">
-                                “I illuminate students to understand the world.”
-                            </p>
-                        </article>
-
-                        <!-- PROFESSOR 3 -->
-                        <article>
-                            <img
-                                src="img/faculty3.jpg"
-                                alt="Professor"
-                                class="w-full h-[200px] object-cover">
-                            <span class="block text-[8px]
-                        text-[#c5a347]
-                        uppercase mt-2">
-                                Director of Technology
-                            </span>
-                            <h3 class="serif text-sm font-bold">
-                                Mr. Kevin Watanabe
-                            </h3>
-                            <p class="text-[8px]
-                        text-gray-600 mt-1">
-                                “Code is how we shape the future.”
-                            </p>
-                        </article>
-
-                        <!-- PROFESSOR 4 -->
-                        <article>
-                            <img
-                                src="img/faculty4.jpg"
-                                alt="Professor"
-                                class="w-full h-[200px] object-cover">
-                            <span class="block text-[8px]
-                        text-[#c5a347]
-                        uppercase mt-2">
-                                Head of Development
-                            </span>
-                            <h3 class="serif text-sm font-bold">
-                                Dr. Mireille Dupont
-                            </h3>
-                            <p class="text-[8px]
-                        text-gray-600 mt-1">
-                                “Every language is a new window on the world.”
-                            </p>
-                        </article>
-=======
-                        <?php } ?>
->>>>>>> 28a68e9fdf61767914d2136ab6bead81fa8fd762
-                    </div>
-                </div>
             </section>
             <section id="depoimentos" class="bg-[#f5f2eb] py-20" name="depoimentos" id="depoimentos">
                 <div class="max-w-[1050px] mx-auto px-6">
@@ -439,24 +320,81 @@ require_once 'dados.php';
                         </div>
                     </div>
 
-                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-[1200px] mx-auto mt-8 mb-10">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-[1200px] mx-auto mt-8 mb-10">
                         <?php $contadorDepoimentos = 0;
-                        foreach ($depoimentos as $depoimento){
+                        foreach ($depoimentos as $depoimento) {
                             if ($contadorDepoimentos >= 4) {
                                 break;
-                                }
+                            }
                             $contadorDepoimentos++;
                         ?>
                             <div class="relative h-[280px] overflow-hidden group">
-                                <img src="<?= $depoimento['imagem']?>" alt="<?= $depoimento['alt']?>" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                            <div class="absolute inset-0 bg-gradient-to-t from-[#061c3c] via-[#061c3c]/30 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 p-4 text-white">
-                            <h2 class="text-base font-bold"><?= $depoimento['nome']?></h2>
-                            <p class="text-sm text-yellow-400 mt-1"><?= $depoimento['depoimento']?></p>
-                        </div>
+                                <img src="<?= $depoimento['imagem'] ?>" alt="<?= $depoimento['alt'] ?>" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-gradient-to-t from-[#061c3c] via-[#061c3c]/30 to-transparent"></div>
+                                <div class="absolute bottom-0 left-0 p-4 text-white">
+                                    <h2 class="text-base font-bold"><?= $depoimento['nome'] ?></h2>
+                                    <p class="text-sm text-yellow-400 mt-1"><?= $depoimento['depoimento'] ?></p>
+                                </div>
                             </div>
                         <?php } ?>
+                    </div>
+            </section>
+            <section id="professores" class="bg-[#f5f2eb] py-20" name="professores" id="professores">
+                <div class="max-w-[1050px] mx-auto px-6">
+                    <div class="flex justify-between items-end mb-8">
+                        <div>
+                            <h2 class="text-5xl md:text-6xl font-bold leading-tight">
+                                Nossos professores
+                            </h2>
+                            <p class="text-[#c59645] text-xs md:text-sm tracking-[0.25em] uppercase font-medium mt-3">
+                                Conheça quem trabalha conosco.
+                            </p>
                         </div>
+                    </div>
+                    <div class="relative max-w-[1200px] mx-auto mt-8 mb-10">
+                        <button
+                            id="prevProfessor"
+                            type="button"
+                            class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 bg-white shadow-lg rounded-full w-10 h-10 flex items-center justify-center hover:bg-slate-100 transition">
+                            ←
+                        </button>
+                        <div class="overflow-hidden">
+                            <div
+                                id="professoresCarousel"
+                                class="flex gap-4 transition-transform duration-500 ease-in-out">
+                                <?php foreach ($professores as $professor) { 
+                                    ?>
+                                    <div
+                                        class="relative h-[280px] min-w-full sm:min-w-[calc(50%-8px)] lg:min-w-[calc(25%-12px)] overflow-hidden group">
+                                        <img src="<?= $professor['imagem'] ?>" alt="<?= $professor['alt'] ?>"
+                                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                        <div
+                                            class="absolute inset-0 bg-gradient-to-t from-[#061c3c] via-[#061c3c]/30 to-transparent"></div>
+                                        <div class="absolute bottom-0 left-0 p-4 text-white">
+                                            <h2 class="text-base font-bold">
+                                                <?= $professor['nome'] ?>
+                                            </h2>
+                                            <p class="text-sm text-yellow-400 mt-1">
+                                                <?= $professor['materia'] ?>
+                                            </p>
+                                        </div>
+                                    </div>
+                                <?php } ?>
+                            </div>
+                        </div>
+
+                        <!-- Botão próximo -->
+                        <button
+                            id="nextProfessor"
+                            type="button"
+                            class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10
+                bg-white shadow-lg rounded-full w-10 h-10
+                flex items-center justify-center
+                hover:bg-slate-100 transition">
+                            →
+                        </button>
+
+                    </div>
             </section>
             <section id="contato" class="bg-[#0d2348] text-white py-20  ">
                 <div class="columns-2xl gap-14">
@@ -517,7 +455,7 @@ require_once 'dados.php';
                             </div>
                         </div>
                         <div class="mt-6">
-                            <a href='#' class="text-base text-[#c9a84f] uppercase">
+                            <a href='./login.php' class="text-base text-[#c9a84f] uppercase">
                                 Administradores
                             </a>
                         </div>
@@ -535,6 +473,7 @@ require_once 'dados.php';
             </div>
         </div>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
