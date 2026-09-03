@@ -1,5 +1,8 @@
+<?php
+require_once 'dados.php';
+?>
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -9,11 +12,10 @@
 </head>
 
 <body>
-    <header>
-        <nav
-            class="flex bg-[#0e2347] min-h-[68px] relative" aria-label="Main navigation">
-            <div class="max-w-7xl mx-auto flex flex-wrap items-center gap-4 w-full">
-                <a href="#" class="min-w-9 inline-block focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 w-40 h-6">
+    <header class="fixed top-0 left-0 w-full z-50">
+        <nav class="flex bg-slate-700/50 min-h-[68px] relative" aria-label="Main navigation">
+            <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4 w-full">
+                <a href="#" class="min-w-9 inline-block focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 w-40 flex">
                     <img src="./assets/img/EMI-logo.png" class="">
                 </a>
                 <div id="collapseMenu" tabindex="-1"
@@ -38,32 +40,28 @@
                     <ul class="flex flex-col gap-8 font-semibold text-sm text-slate-900 dark:text-slate-50 lg:flex-row max-lg:p-6">
                         <li>
                             <a href="#sobre-nos"
-                                class="hover:text-orange-500 focus:outline-none focus-visible:ring-2 rounded"
+                                class="hover:text-orange-400 focus:outline-none focus-visible:ring-2 rounded"
                                 aria-current="page">Sobre nós</a>
                         </li>
                         <li>
                             <a href="#clubes"
-                                class="hover:text-orange-500 focus:outline-none focus-visible:ring-2 rounded">Clubes</a>
+                                class="hover:text-orange-400 focus:outline-none focus-visible:ring-2 rounded">Clubes</a>
                         </li>
                         <li>
-                            <a href="#feiras"
-                                class="hover:text-orange-500 focus:outline-none focus-visible:ring-2 rounded">Feiras</a>
+                            <a href="#projetos"
+                                class="hover:text-orange-400 focus:outline-none focus-visible:ring-2 rounded">Projetos</a>
                         </li>
                         <li>
                             <a href="#extra"
-                                class="hover:text-orange-500 focus:outline-none focus-visible:ring-2 rounded">Extra Curriculares</a>
-                        </li>
-                        <li>
-                            <a href="#eventos"
-                                class="hover:text-orange-500 focus:outline-none focus-visible:ring-2 rounded">Eventos</a>
+                                class="hover:text-orange-400 focus:outline-none focus-visible:ring-2 rounded">Extracurriculares</a>
                         </li>
                         <li>
                             <a href="#depoimentos"
-                                class="hover:text-orange-500 focus:outline-none focus-visible:ring-2 rounded">Depoimentos</a>
+                                class="hover:text-orange-400 focus:outline-none focus-visible:ring-2 rounded">Depoimentos</a>
                         </li>
                         <li>
-                            <a href="#inscricao"
-                                class="hover:text-orange-500 focus:outline-none focus-visible:ring-2 rounded">Inscrição</a>
+                            <a href="#contato"
+                                class="hover:text-orange-400 focus:outline-none focus-visible:ring-2 rounded">Contato</a>
                         </li>
                     </ul>
                 </div>
@@ -85,7 +83,6 @@
     <main>
         <div class="container w-full mx-auto max-w-full">
             <section class="relative h-[500px] md:h-[600px] overflow-hidden" name="video">
-                <!-- Vídeo de fundo -->
                 <video
                     class="absolute inset-0 w-full h-full object-cover"
                     autoplay
@@ -117,7 +114,6 @@
             </section>
             <section class="bg-[#f8f5f0] px-5 md:px-10 lg:px-16 py-12" name="sobre-nos" id="sobre-nos">
                 <div class="max-w-7xl mx-auto">
-                    <!-- Cabeçalho -->
                     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-16 items-start">
                         <div>
                             <p class="text-[#c59645] text-xs md:text-sm tracking-[0.25em] uppercase font-medium">
@@ -129,7 +125,7 @@
                         </div>
                         <div class="lg:col-span-2">
                             <p class="text-xl md:text-2xl leading-relaxed text-[#4d4d4d] max-w-4xl">
-                                Aqui, a formação vai além dos conteúdos tradicionais. A teoria e a prática caminham juntas para desenvolver competências que fazem a diferença na vida pessoal e profissional.
+                                Aqui, a formação vai além dos conteúdos tradicionais. A teoria e a prática caminham juntas para desenvolver competências que fazem a diferença na vida pessoal, profissional e acadêmica.
                             </p>
                         </div>
                     </div>
@@ -199,7 +195,6 @@
             </section>
             <section class="bg-[#f8f5f0] px-5 md:px-10 lg:px-16 py-16" name="clubes" id="clubes">
                 <div class="max-w-7xl mx-auto">
-                    <!-- Cabeçalho -->
                     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-16 items-start">
                         <div>
                             <h2 class="text-5xl md:text-6xl font-bold text-[#071d41] leading-tight">
@@ -207,45 +202,16 @@
                             </h2>
                         </div>
                     </div>
-                    <?php
-                    $clubes = [
-                        [
-                            'categoria' => 'Clube de Ciências',
-                            'numero' => '#01',
-                            'titulo' => 'Clube de Ciências BrisaMAR',
-                            'descricao' => 'Students explore the phases of mitosis — prophase, metaphase, anaphase, and telophase — through live microscopy sessions and animated cell models.',
-                            'nivel' => 'Grade 10',
-                            'duracao' => '3 weeks',
-                            'cor' => '#7ED9FC',
-                            'bg_categoria' => '#e8f1ed'
-                        ],
-                        [
-                            'categoria' => 'Literatura',
-                            'numero' => '#04',
-                            'titulo' => 'Clube do Livro',
-                            'descricao' => 'An in-depth examination of industrialization in Britain and its spread worldwide, covering labor movements, urbanization, and long-term economic consequences.',
-                            'nivel' => 'Grade 9',
-                            'duracao' => '4 weeks',
-                            'cor' => '#D6A20F',
-                            'bg_categoria' => '#f4ebe3'
-                        ],
-                        [
-                            'categoria' => 'Informativo',
-                            'numero' => '#05',
-                            'titulo' => 'Clube Jornal Escolar',
-                            'descricao' => 'An in-depth examination of industrialization in Britain and its spread worldwide, covering labor movements, urbanization, and long-term economic consequences.',
-                            'nivel' => 'Grade 9',
-                            'duracao' => '4 weeks',
-                            'cor' => '#0021E0',
-                            'bg_categoria' => '#f4ebe3'
-                        ],
-                    ];
-                    ?>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">
-                        <?php foreach ($clubes as $clube): ?>
+                        <?php $contadorClube = 0;
+                        foreach ($clubes as $clube){ 
+                            if ($contadorClube >= 3){
+                                break;
+                            }
+                            $contadorClube++
+                            ?>
                             <article
                                 class="relative bg-[#faf8f4] border border-[#ddd8d0] p-6 md:p-7 min-h-[310px] flex flex-col">
-                                <!-- Barra superior -->
                                 <div
                                     class="absolute top-0 left-0 right-0 h-[6px]"
                                     style="background-color: <?= $clube['cor'] ?>;"></div>
@@ -259,61 +225,45 @@
                                 ">
                                         <?= $clube['categoria'] ?>
                                     </span>
-                                    <span class="text-xs text-[#555]">
-                                        <?= $clube['numero'] ?>
-                                    </span>
                                 </div>
                                 <!-- Título -->
                                 <h3 class="mt-4 text-xl md:text-2xl font-bold text-[#071d41] leading-tight">
                                     <?= $clube['titulo'] ?>
                                 </h3>
                                 <!-- Descrição -->
-                                <p class="mt-8 text-[15px] leading-relaxed text-[#666]">
+                                <p class="mt-8 text-[15px] leading-relaxed text-[#666] text-justify">
                                     <?= $clube['descricao'] ?>
                                 </p>
                             </article>
-                        <?php endforeach; ?>
+                        <?php } ?>
                     </div>
                 </div>
             </section>
-            <section class="bg-[#f8f5f0] px-5 md:px-10 lg:px-16 py-16" name="feiras" id="feiras"> <!-- Título -->
+            <section class="bg-[#f8f5f0] px-5 md:px-10 lg:px-16 py-16" name="projetos" id="projetos">
                 <div class="max-w-[1200px] mx-auto">
-                    <h2 class="mt-5 text-5xl md:text-6xl font-bold text-[#071d41] leading-tight"> Feiras </h2>
-                </div> <!-- Cards -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-[1200px] mx-auto mt-8"> <!-- Card 1 -->
-                    <div class="relative h-[280px] overflow-hidden group"> <img src="./assets/img/image copy 2.png" alt="Semana Literaria" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#061c3c] via-[#061c3c]/30 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 p-4 text-white">
-                            <h2 class="text-base font-bold">Feira Cultural</h2>
-                            <p class="text-sm text-yellow-400 mt-1">9 a 15 de agosto</p>
-                        </div>
-                    </div> <!-- Card 2 -->
-                    <div class="relative h-[280px] overflow-hidden group"> <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=700&q=80" alt="Atletismo" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#061c3c] via-[#061c3c]/30 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 p-4 text-white">
-                            <h2 class="text-base font-bold">Feira do Empreendedorismo</h2>
-                            <p class="text-sm text-yellow-400 mt-1"> 32 times universitários </p>
-                        </div>
-                    </div> <!-- Card 3 -->
-                    <div class="relative h-[280px] overflow-hidden group"> <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=700&q=80" alt="Artes e Teatro" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#061c3c] via-[#061c3c]/20 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 p-4 text-white">
-                            <h2 class="text-base font-bold">Feira do Conhecimento</h2>
-                            <p class="text-sm text-yellow-400 mt-1"> 3 produções anuais </p>
-                        </div>
-                    </div> <!-- Card 4 -->
-                    <div class="relative h-[280px] overflow-hidden group"> <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=700&q=80" alt="Serviço Comunitário" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#061c3c] via-[#061c3c]/30 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 p-4 text-white">
-                            <h2 class="text-base font-bold">Projeto Integrador</h2>
-                            <p class="text-sm text-yellow-400 mt-1"> 12.000 horas/ano </p>
-                        </div>
-                    </div>
+                    <h2 class="mt-5 text-5xl md:text-6xl font-bold text-[#071d41] leading-tight"> Projetos </h2>
                 </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-[1200px] mx-auto mt-8">
+                        <?php $contadorProjetos = 0;
+                        foreach ($projetos as $projeto){
+                            if ($contadorProjetos >= 4){
+                                break;
+                            }
+                            $contadorProjetos++
+                            ?>
+                            <div class="relative h-[280px] overflow-hidden group">
+                                <img src="<?= $projeto['imagem']?>" alt="<?= $projeto['alt']?>" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#061c3c] via-[#061c3c]/30 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-4 text-white">
+                            <h2 class="text-base font-bold"><?= $projeto['titulo']?></h2>
+                            <p class="text-sm text-yellow-400 mt-1"><?= $projeto['descricao']?></p>
+                        </div>
+                            </div>
+                        <?php } ?>
+                        </div>
             </section>
-            <section id="extra" class="bg-[#0e2347] text-white py-20" name="extra-curriculares">
+            <section id="extra" class="bg-[#0e2347] text-white py-20" name="extracurriculares">
                 <div class="max-w-[1200px] mx-auto px-6">
-                    <!-- Cabeçalho -->
                     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-16 items-start">
                         <div>
                             <h2 class="text-5xl md:text-6xl font-bold text-[#f8f5f0] leading-tight">
@@ -321,84 +271,36 @@
                             </h2>
                         </div>
                     </div>
-                    <?php
-                    $extra = [
-                        [
-                            'categoria' => 'Esportes',
-                            'numero' => '#01',
-                            'titulo' => 'Atividades Esportivas',
-                            'descricao' => 'Students explore the phases of mitosis — prophase, metaphase, anaphase, and telophase — through live microscopy sessions and animated cell models.',
-                            'nivel' => 'Grade 10',
-                            'duracao' => '3 weeks',
-                            'cor' => '#CC2525',
-                            'bg_categoria' => '#e8f1ed'
-                        ],
-                        [
-                            'categoria' => 'Literatura',
-                            'numero' => '#02',
-                            'titulo' => 'Jovens Autores',
-                            'descricao' => 'Introduction to differential calculus, exploring limits, the definition of the derivative, and real-world applications such as velocity and optimization problems.',
-                            'nivel' => 'Grade 11–12',
-                            'duracao' => '4 weeks',
-                            'cor' => '#8A4B18',
-                            'bg_categoria' => '#e9edf5'
-                        ],
-                        [
-                            'categoria' => 'Escrita',
-                            'numero' => '#03',
-                            'titulo' => 'Oficina de Redação',
-                            'descricao' => 'An in-depth examination of industrialization in Britain and its spread worldwide, covering labor movements, urbanization, and long-term economic consequences.',
-                            'nivel' => 'Grade 9',
-                            'duracao' => '4 weeks',
-                            'cor' => '#7800E0',
-                            'bg_categoria' => '#f4ebe3'
-                        ],
-                    ];
-                    ?>
-
-                    <!-- Cards -->
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-14">
-
-                        <?php foreach ($extra as $extras): ?>
-
-                            <article
-                                class="relative bg-[#faf8f4] border border-[#ddd8d0] p-6 md:p-7 min-h-[310px] flex flex-col">
-
-                                <!-- Barra superior -->
+                        <?php $contadorExtracurricular = 0;
+                        foreach ($extra as $extras){ 
+                        if ($contadorExtracurricular >= 3) {
+                            break;
+                        }
+                        $contadorExtracurricular++;
+                        ?>
+                            <article class="relative bg-[#faf8f4] border border-[#ddd8d0] p-6 md:p-7 min-h-[200px] flex flex-col">
                                 <div
                                     class="absolute top-0 left-0 right-0 h-[6px]"
                                     style="background-color: <?= $extras['cor'] ?>;">
                                 </div>
-
-                                <!-- Categoria + número -->
                                 <div class="flex items-center justify-between mt-1">
-
                                     <span
                                         class="inline-block px-2 py-1 text-xs font-medium tracking-[0.15em]"
                                         style="
                                 color: <?= $extras['cor'] ?>;
-                                background-color: <?= $extras['bg_categoria'] ?>;
-                            ">
+                                background-color: <?= $extras['bg_categoria'] ?>">
                                         <?= $extras['categoria'] ?>
                                     </span>
-
-                                    <span class="text-xs text-[#555]">
-                                        <?= $extras['numero'] ?>
-                                    </span>
-
                                 </div>
-
-                                <!-- Título -->
                                 <h3 class="mt-4 text-xl md:text-2xl font-bold text-[#071d41] leading-tight">
                                     <?= $extras['titulo'] ?>
                                 </h3>
-
-                                <!-- Descrição -->
-                                <p class="mt-8 text-[15px] leading-relaxed text-[#666]">
+                                <p class="mt-8 text-[15px] leading-relaxed text-[#666] text-justify">
                                     <?= $extras['descricao'] ?>
                                 </p>
-
                             </article>
+<<<<<<< HEAD
 
                         <?php endforeach; ?>
 
@@ -518,115 +420,45 @@
                                 “Every language is a new window on the world.”
                             </p>
                         </article>
+=======
+                        <?php } ?>
+>>>>>>> 28a68e9fdf61767914d2136ab6bead81fa8fd762
                     </div>
                 </div>
             </section>
             <section id="depoimentos" class="bg-[#f5f2eb] py-20" name="depoimentos" id="depoimentos">
                 <div class="max-w-[1050px] mx-auto px-6">
-
-                    <!-- CABEÇALHO -->
-                    <div class="flex justify-between
-                items-end mb-8">
+                    <div class="flex justify-between items-end mb-8">
                         <div>
-                            <span class="text-[9px]
-                        tracking-[2px]
-                        text-[#c8a64d]">
-                                NEWS
-                            </span>
-                            <h2 class="serif text-4xl font-bold">
+                            <h2 class="text-5xl md:text-6xl font-bold leading-tight">
                                 Depoimentos
                             </h2>
+                            <p class="text-[#c59645] text-xs md:text-sm tracking-[0.25em] uppercase font-medium mt-3">
+                                Experiências de quem já passou por aqui.
+                            </p>
                         </div>
-
-                        <a
-                            href="#"
-                            class="text-[8px]
-                    uppercase
-                    tracking-wider
-                    text-[#c8a64d]">
-                            All Stories →
-                        </a>
                     </div>
 
-                    <!-- CARDS -->
-                    <div class="grid grid-cols-1
-                md:grid-cols-3 gap-6">
-
-                        <!-- DEPOIMENTO 1 -->
-                        <article>
-                            <img
-                                src="img/news1.jpg"
-                                alt="Evento"
-                                class="w-full h-[125px] object-cover">
-                            <div class="mt-2">
-                                <span class="text-[8px]
-                            text-[#c8a64d]
-                            uppercase">
-                                    Achievement
-                                </span>
-                                <span class="text-[8px]
-                            text-gray-400 ml-2">
-                                    August 5, 2026
-                                </span>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-[1200px] mx-auto mt-8 mb-10">
+                        <?php $contadorDepoimentos = 0;
+                        foreach ($depoimentos as $depoimento){
+                            if ($contadorDepoimentos >= 4) {
+                                break;
+                                }
+                            $contadorDepoimentos++;
+                        ?>
+                            <div class="relative h-[280px] overflow-hidden group">
+                                <img src="<?= $depoimento['imagem']?>" alt="<?= $depoimento['alt']?>" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#061c3c] via-[#061c3c]/30 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-4 text-white">
+                            <h2 class="text-base font-bold"><?= $depoimento['nome']?></h2>
+                            <p class="text-sm text-yellow-400 mt-1"><?= $depoimento['depoimento']?></p>
+                        </div>
                             </div>
-                            <h3 class="serif text-sm
-                        font-bold mt-1">
-                                Westbrook Heights Team Wins Regional
-                                Championship for Third Consecutive Year
-                            </h3>
-                        </article>
-
-                        <!-- DEPOIMENTO 2 -->
-                        <article>
-                            <img
-                                src="img/news2.jpg"
-                                alt="Campus"
-                                class="w-full h-[125px] object-cover">
-                            <div class="mt-2">
-                                <span class="text-[8px]
-                            text-[#c8a64d]
-                            uppercase">
-                                    Campus
-                                </span>
-                                <span class="text-[8px]
-                            text-gray-400 ml-2">
-                                    July 22, 2026
-                                </span>
-                            </div>
-                            <h3 class="serif text-sm
-                        font-bold mt-1">
-                                New Innovation Hub Opens Its Doors
-                                to Students This Fall Semester
-                            </h3>
-                        </article>
-
-                        <!-- DEPOIMENTO 3 -->
-                        <article>
-                            <img
-                                src="img/news3.jpg"
-                                alt="Aluno estudando"
-                                class="w-full h-[125px] object-cover">
-                            <div class="mt-2">
-                                <span class="text-[8px]
-                            text-[#c8a64d]
-                            uppercase">
-                                    Academic
-                                </span>
-                                <span class="text-[8px]
-                            text-gray-400 ml-2">
-                                    July 10, 2026
-                                </span>
-                            </div>
-                            <h3 class="serif text-sm
-                        font-bold mt-1">
-                                AP Physics Earns High All-Time
-                                Rate at 94% School-Wide
-                            </h3>
-                        </article>
-                    </div>
-                </div>
+                        <?php } ?>
+                        </div>
             </section>
-            <section id="inscricao" class="bg-[#0d2348] text-white py-20  ">
+            <section id="contato" class="bg-[#0d2348] text-white py-20  ">
                 <div class="columns-2xl gap-14">
                     <div class="card-left p-10 flex flex-col">
                         <h2 class="text-4xl font-bold mt-1">
@@ -685,7 +517,7 @@
                             </div>
                         </div>
                         <div class="mt-6">
-                            <a class="text-base text-[#c9a84f] uppercase">
+                            <a href='#' class="text-base text-[#c9a84f] uppercase">
                                 Administradores
                             </a>
                         </div>
