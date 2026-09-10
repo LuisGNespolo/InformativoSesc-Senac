@@ -16,7 +16,8 @@ require_once 'dados.php';
     <header class="fixed top-0 left-0 w-full z-50">
         <nav class="flex bg-slate-700/50 min-h-[68px] relative" aria-label="Main navigation">
             <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4 w-full">
-                <a href="#" class="min-w-9 inline-block focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 w-40 flex">
+                <a href="#"
+                    class="min-w-9 inline-block focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 w-40 flex">
                     <img src="./assets/img/EMI-logo.png" class="">
                 </a>
                 <div id="collapseMenu" tabindex="-1"
@@ -38,7 +39,8 @@ require_once 'dados.php';
                             </svg>
                         </button>
                     </div>
-                    <ul class="flex flex-col gap-8 font-semibold text-sm text-slate-900 dark:text-slate-50 lg:flex-row max-lg:p-6">
+                    <ul
+                        class="flex flex-col gap-8 font-semibold text-sm text-slate-900 dark:text-slate-50 lg:flex-row max-lg:p-6">
                         <li>
                             <a href="#sobre-nos"
                                 class="hover:text-orange-400 focus:outline-none focus-visible:ring-2 rounded"
@@ -67,7 +69,8 @@ require_once 'dados.php';
                     </ul>
                 </div>
                 <div class="flex items-center gap-4 lg:ml-4">
-                    <button type="button" aria-controls="collapseMenu" aria-expanded="false" aria-haspopup="true" id="toggleOpen"
+                    <button type="button" aria-controls="collapseMenu" aria-expanded="false" aria-haspopup="true"
+                        id="toggleOpen"
                         class="cursor-pointer lg:hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded">
                         <span class="sr-only">Open main menu</span>
                         <svg class="size-7 fill-slate-900 dark:fill-slate-50" aria-hidden="true" viewBox="0 0 20 20"
@@ -103,8 +106,7 @@ require_once 'dados.php';
                             para desenvolver habilidades essenciais para o futuro.
                         </p>
 
-                        <a
-                            href="#sobre-nos"
+                        <a href="#sobre-nos"
                             class="inline-block mt-6 px-6 py-3 rounded-md bg-blue-600 hover:bg-blue-700 text-white font-semibold transition">
                             Sobre nós
                         </a>
@@ -126,7 +128,9 @@ require_once 'dados.php';
                         </div>
                         <div class="lg:col-span-2">
                             <p class="text-xl md:text-2xl leading-relaxed text-[#4d4d4d] max-w-4xl">
-                                Aqui, a formação vai além dos conteúdos tradicionais. A teoria e a prática caminham juntas para desenvolver competências que fazem a diferença na vida pessoal, profissional e acadêmica.
+                                Aqui, a formação vai além dos conteúdos tradicionais. A teoria e a prática caminham
+                                juntas para desenvolver competências que fazem a diferença na vida pessoal, profissional
+                                e acadêmica.
                             </p>
                         </div>
                     </div>
@@ -150,9 +154,7 @@ require_once 'dados.php';
                     ?>
                     <div class="mt-14 flex flex-wrap gap-2">
                         <?php foreach ($categorias as $index => $categoria): ?>
-                            <button
-                                type="button"
-                                class="
+                            <button type="button" class="
                         px-4 py-2.5
                         border
                         text-xs
@@ -176,7 +178,8 @@ require_once 'dados.php';
                             <div class="relative h-[320px] md:h-[420px] lg:h-[420px] overflow-hidden">
                                 <!-- Overlay -->
                                 <div class="absolute inset-0 bg-[#071d41]/20">
-                                    <img src="./assets/img/image copy.png" alt="sala de informática" class="w-full h-full object-cover">
+                                    <img src="./assets/img/image copy.png" alt="sala de informática"
+                                        class="w-full h-full object-cover">
                                 </div>
                             </div>
                             <!-- Conteúdo -->
@@ -186,7 +189,8 @@ require_once 'dados.php';
                                         Curso Técnico
                                     </h2>
                                     <p class="mt-5 text-base md:text-lg leading-relaxed text-[#666] max-w-xl">
-                                        Formação profissional com diploma de Curso Técnico em Informática para Aplicações Web
+                                        Formação profissional com diploma de Curso Técnico em Informática para
+                                        Aplicações Web
                                     </p>
                                 </div>
                             </div>
@@ -213,14 +217,11 @@ require_once 'dados.php';
                         ?>
                             <article
                                 class="relative bg-[#faf8f4] border border-[#ddd8d0] p-6 md:p-7 min-h-[310px] flex flex-col">
-                                <div
-                                    class="absolute top-0 left-0 right-0 h-[6px]"
+                                <div class="absolute top-0 left-0 right-0 h-[6px]"
                                     style="background-color: <?= $clube['cor'] ?>;"></div>
                                 <!-- Categoria + número -->
                                 <div class="flex items-center justify-between mt-1">
-                                    <span
-                                        class="inline-block px-2 py-1 text-xs font-medium tracking-[0.15em]"
-                                        style="
+                                    <span class="inline-block px-2 py-1 text-xs font-medium tracking-[0.15em]" style="
                                 color: <?= $clube['cor'] ?>;
                                 background-color: <?= $clube['bg_categoria'] ?>;
                                 ">
@@ -253,8 +254,10 @@ require_once 'dados.php';
                         $contadorProjetos++
                     ?>
                         <div class="relative h-[280px] overflow-hidden group">
-                            <img src="<?= $projeto['imagem'] ?>" alt="<?= $projeto['alt'] ?>" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                            <div class="absolute inset-0 bg-gradient-to-t from-[#061c3c] via-[#061c3c]/30 to-transparent"></div>
+                            <img src="<?= $projeto['imagem'] ?>" alt="<?= $projeto['alt'] ?>"
+                                class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#061c3c] via-[#061c3c]/30 to-transparent">
+                            </div>
                             <div class="absolute bottom-0 left-0 p-4 text-white">
                                 <h2 class="text-base font-bold"><?= $projeto['titulo'] ?></h2>
                                 <p class="text-sm text-yellow-400 mt-1"><?= $projeto['descricao'] ?></p>
@@ -280,15 +283,13 @@ require_once 'dados.php';
                             }
                             $contadorExtracurricular++;
                         ?>
-                            <article class="relative bg-[#faf8f4] border border-[#ddd8d0] p-6 md:p-7 min-h-[200px] flex flex-col">
-                                <div
-                                    class="absolute top-0 left-0 right-0 h-[6px]"
+                            <article
+                                class="relative bg-[#faf8f4] border border-[#ddd8d0] p-6 md:p-7 min-h-[200px] flex flex-col">
+                                <div class="absolute top-0 left-0 right-0 h-[6px]"
                                     style="background-color: <?= $extras['cor'] ?>;">
                                 </div>
                                 <div class="flex items-center justify-between mt-1">
-                                    <span
-                                        class="inline-block px-2 py-1 text-xs font-medium tracking-[0.15em]"
-                                        style="
+                                    <span class="inline-block px-2 py-1 text-xs font-medium tracking-[0.15em]" style="
                                 color: <?= $extras['cor'] ?>;
                                 background-color: <?= $extras['bg_categoria'] ?>">
                                         <?= $extras['categoria'] ?>
@@ -330,8 +331,11 @@ require_once 'dados.php';
                             $contadorDepoimentos++;
                         ?>
                             <div class="relative h-[280px] overflow-hidden group">
-                                <img src="<?= $depoimento['imagem'] ?>" alt="<?= $depoimento['alt'] ?>" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                                <div class="absolute inset-0 bg-gradient-to-t from-[#061c3c] via-[#061c3c]/30 to-transparent"></div>
+                                <img src="<?= $depoimento['imagem'] ?>" alt="<?= $depoimento['alt'] ?>"
+                                    class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-[#061c3c] via-[#061c3c]/30 to-transparent">
+                                </div>
                                 <div class="absolute bottom-0 left-0 p-4 text-white">
                                     <h2 class="text-base font-bold"><?= $depoimento['nome'] ?></h2>
                                     <p class="text-sm text-yellow-400 mt-1"><?= $depoimento['depoimento'] ?></p>
@@ -353,25 +357,21 @@ require_once 'dados.php';
                         </div>
                     </div>
                     <div class="relative max-w-[1200px] mx-auto mt-8 mb-10">
-                        <button
-                            id="prevProfessor"
-                            type="button"
+                        <button id="prevProfessor" type="button"
                             class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 z-10 bg-white shadow-lg rounded-full w-10 h-10 flex items-center justify-center hover:bg-slate-100 transition">
                             ←
                         </button>
                         <div class="overflow-hidden">
-                            <div
-                                id="professoresCarousel"
+                            <div id="professoresCarousel"
                                 class="flex gap-4 transition-transform duration-500 ease-in-out">
                                 <?php foreach ($professores as $professor) { ?>
-                                    <div
-                                        class="relative h-[280px] min-w-full sm:min-w-[calc(50%-8px)] lg:min-w-[calc(25%-12px)] overflow-hidden group cursor-pointer"
+                                    <div class="relative h-[280px] min-w-full sm:min-w-[calc(50%-8px)] lg:min-w-[calc(25%-12px)] overflow-hidden group cursor-pointer"
                                         onclick="this.querySelector('.descricao').classList.toggle('aberta')">
-                                        <img
-                                            src="<?= $professor['imagem'] ?>"
-                                            alt="<?= $professor['alt'] ?>"
+                                        <img src="<?= $professor['imagem'] ?>" alt="<?= $professor['alt'] ?>"
                                             class="absolute inset-0 w-full h-full object-cover">
-                                        <div class="absolute inset-0 bg-gradient-to-t from-[#061c3c] via-[#061c3c]/30 to-transparent"></div>
+                                        <div
+                                            class="absolute inset-0 bg-gradient-to-t from-[#061c3c] via-[#061c3c]/30 to-transparent">
+                                        </div>
                                         <div class="absolute bottom-0 left-0 p-4 text-white z-10">
                                             <h2 class="text-base font-bold">
                                                 <?= $professor['nome'] ?>
@@ -395,13 +395,37 @@ require_once 'dados.php';
                                 <?php } ?>
                             </div>
                         </div>
-                        <button
-                            id="nextProfessor"
-                            type="button"
+                        <button id="nextProfessor" type="button"
                             class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 z-10 bg-white shadow-lg rounded-full w-10 h-10 flex items-center justify-center hover:bg-slate-100 transition">
                             →
                         </button>
                     </div>
+            </section>
+            <section id="feedback" class="bg-[#0d2348] text-white">
+                <div class="card-left p-10 pb-1 flex flex-col">
+                    <h2 class="text-4xl font-bold mt-1">
+                        Feedback
+                    </h2>
+                    <p class="text-xl text-[#d8d5cc] mt-4 mb-4">
+                        Dê seu feedback para podermos melhorar!
+                    </p>
+                    <div class="max-w-sm w-full lg:max-w-full lg:flex">
+                        <form class="w-full max-w-lg">
+                            <div class="flex flex-wrap -mx-3 mb-6">
+                                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0 rounded-2xl">
+                                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                        for="grid-first-name">
+                                        Escreva seu depoimento
+                                    </label>
+                                    <input
+                                        class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                                        id="grid-first-name" type="text" placeholder="Depoimento">
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
             </section>
             <section id="contato" class="bg-[#0d2348] text-white py-20  ">
                 <div class="columns-2xl gap-14">
@@ -445,18 +469,24 @@ require_once 'dados.php';
                         <div class="mt-6">
                             <div class="flex">
                                 <span class="pr-5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                        class="bi bi-instagram" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
                                     </svg>
                                 </span>
                                 <span class="pr-5">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                        class="bi bi-facebook" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
                                     </svg>
                                 </span>
                                 <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-                                        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                        class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                        <path
+                                            d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
                                     </svg>
                                 </span>
                             </div>
