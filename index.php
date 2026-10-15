@@ -1,5 +1,7 @@
 <?php
 require_once 'dados.php';
+
+const depoimento = "sim";
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
@@ -61,6 +63,10 @@ require_once 'dados.php';
                         <li>
                             <a href="#depoimentos"
                                 class="hover:text-orange-400 focus:outline-none focus-visible:ring-2 rounded">Depoimentos</a>
+                        </li>
+                        <li>
+                            <a href="#feedback"
+                                class="hover:text-orange-400 focus:outline-none focus-visible:ring-2 rounded">Feedback</a>
                         </li>
                         <li>
                             <a href="#contato"
@@ -401,31 +407,89 @@ require_once 'dados.php';
                         </button>
                     </div>
             </section>
-            <section id="feedback" class="bg-[#0d2348] text-white">
-                <div class="card-left p-10 pb-1 flex flex-col">
-                    <h2 class="text-4xl font-bold mt-1">
-                        Feedback
-                    </h2>
-                    <p class="text-xl text-[#d8d5cc] mt-4 mb-4">
-                        Dê seu feedback para podermos melhorar!
-                    </p>
-                    <div class="max-w-sm w-full lg:max-w-full lg:flex">
-                        <form class="w-full max-w-lg">
-                            <div class="flex flex-wrap -mx-3 mb-6">
-                                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0 rounded-2xl">
-                                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                                        for="grid-first-name">
-                                        Escreva seu depoimento
-                                    </label>
-                                    <input
-                                        class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                                        id="grid-first-name" type="text" placeholder="Depoimento">
-                                </div>
+            <section id="feedback" class="bg-[#0d2348] text-white py-10">
+                <div class="max-w-7xl mx-auto px-10">
+                    <div class="card-left p-10 flex flex-col">
+                        <h2 class="text-4xl font-bold mt-1">FEEDBACK</h2>
+                        <p class="text-xl text-[#d8d5cc] mt-4 mb-4">
+                            Dê seu feedback para podermos melhorar!
+                        </p>
+                        <form class="mt-4" onsubmit="enviarFeedback(event)">
+                            <div class="border-b border-[#284066] py-3">
+                                <label class="text-base text-[#c9a84f] uppercase block mb-2">
+                                    Nome
+                                </label>
+                                <input
+                                    type="text"
+                                    placeholder="Digite seu nome"
+                                    class="w-full bg-transparent text-lg text-gray-300 placeholder-gray-500 outline-none">
+                            </div>
+                            <div class="border-b border-[#284066] py-3">
+                                <label class="text-base text-[#c9a84f] uppercase block mb-2">
+                                    E-mail
+                                </label>
+                                <input
+                                    type="email"
+                                    placeholder="Digite seu e-mail"
+                                    class="w-full bg-transparent text-lg text-gray-300 placeholder-gray-500 outline-none">
+                            </div>
+                            <div class="border-b border-[#284066] py-3">
+                                <label class="text-base text-[#c9a84f] uppercase block mb-2">
+                                    Como você avalia sua experiência na escola Sesc Senac?
+                                </label>
+                                <select
+                                    class="w-full bg-transparent text-lg text-gray-300 outline-none">
+                                    <option value="" class="bg-[#0d2348]">
+                                        Selecionar
+                                    </option>
+                                    <option class="bg-[#0d2348]">Ótima</option>
+                                    <option class="bg-[#0d2348]">Boa</option>
+                                    <option class="bg-[#0d2348]">Regular</option>
+                                    <option class="bg-[#0d2348]">Ruim</option>
+                                </select>
+                            </div>
+                            <div class="border-b border-[#284066] py-3">
+                                <label class="text-base text-[#c9a84f] uppercase block mb-2">
+                                    Observações
+                                </label>
+                                <textarea
+                                    rows="4"
+                                    placeholder="Escreva seu feedback..."
+                                    class="w-full bg-transparent text-lg text-gray-300 placeholder-gray-500 outline-none resize-none"></textarea>
+                            </div>
+                            <div class="border-b border-[#284066] py-3">
+                                <label class="text-base text-[#c9a84f] uppercase block mb-2">
+                                    Deseja que seu depoimento apareça em nosso site?
+                                </label>
+                                <select
+                                    id="depoimentos"
+                                    class="w-full bg-transparent text-lg text-gray-300 outline-none"
+                                    onchange="verificarDepoimento(this)">
+                                    <option value="nao" class="bg-[#0d2348]">Não</option>
+                                    <option value="sim" class="bg-[#0d2348]">Sim</option>
+                                </select>
+                            </div>
+                            <div class="pt-8 mt-3">
+                                <button
+                                    type="submit"
+                                    class="text-base text-[#c9a84f] uppercase font-medium hover:text-white transition">
+                                    Enviar feedback
+                                </button>
                             </div>
                         </form>
-
                     </div>
                 </div>
+                <script>
+                    function verificarDepoimento(select) {
+                        if (select.value === "sim") {
+                            alert("Entraremos em contato para adicionar seu depoimento!");
+                        }
+                    }
+                    function enviarFeedback(event) {
+                        event.preventDefault();
+                        alert("Seu feedback foi enviado com sucesso!");
+                    }
+                </script>
             </section>
             <section id="contato" class="bg-[#0d2348] text-white py-20  ">
                 <div class="columns-2xl gap-14">
