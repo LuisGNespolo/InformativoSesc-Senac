@@ -145,14 +145,18 @@ $professores = [
     [
         'numero' => '#01',
         'nome' => 'João Gomes',
+        'idade' => '20',
         'materia' => 'Estagiário em Informática',
         'imagem' => './assets/img/professor1.jpg',
         'alt' => 'Estagiário em Informática',
-        'descricao' => 'Formando em Análise e Desenvolvimento de Sistemas'
+        'descricao' => 'Formando em Análise e Desenvolvimento de Sistemas;
+        Técnico em Tecnologia da Informação;
+        '
     ],
     [
         'numero' => '#02',
         'nome' => 'Evandro',
+        'idade' => '20',
         'materia' => 'História',
         'imagem' => './assets/img/professor2.jpg',
         'alt' => 'Professor de História',
@@ -161,6 +165,7 @@ $professores = [
     [
         'numero' => '#03',
         'nome' => 'Pedro',
+        'idade' => '20',
         'materia' => 'Geografia',
         'imagem' => './assets/img/professor3.jpg',
         'alt' => 'Professor de Geografia',
@@ -169,6 +174,7 @@ $professores = [
     [
         'numero' => '#04',
         'nome' => 'Joana',
+        'idade' => '20',
         'materia' => 'Português',
         'imagem' => './assets/img/professora1.jpg',
         'alt' => 'Professora de Português',
@@ -177,6 +183,7 @@ $professores = [
     [
         'numero' => '#05',
         'nome' => 'Francielly',
+        'idade' => '20',
         'materia' => 'Educação Física',
         'imagem' => './assets/img/professora2.jpg',
         'alt' => 'Professora de Educação física',
@@ -185,6 +192,7 @@ $professores = [
     [
         'numero' => '#06',
         'nome' => 'Edna',
+        'idade' => '20',
         'materia' => 'Filosofia',
         'imagem' => './assets/img/professora3.jpg',
         'alt' => 'Professora de Filosofia',
@@ -193,6 +201,7 @@ $professores = [
     [
         'numero' => '#07',
         'nome' => 'Gulherme',
+        'idade' => '20',
         'materia' => 'Artes',
         'imagem' => './assets/img/professor4.jpg',
         'alt' => 'Professor de Artes',
@@ -201,6 +210,7 @@ $professores = [
     [
         'numero' => '#08',
         'nome' => 'Hayley',
+        'idade' => '20',
         'materia' => 'Matemática',
         'imagem' => './assets/img/professora4.jpg',
         'alt' => 'Professora de Matemática',
@@ -209,6 +219,7 @@ $professores = [
     [
         'numero' => '#09',
         'nome' => 'Vânia',
+        'idade' => '20',
         'materia' => 'Sociologia',
         'imagem' => './assets/img/professora5.jpg',
         'alt' => 'Professora de Sociologia',
@@ -217,6 +228,7 @@ $professores = [
     [
         'numero' => '#10',
         'nome' => 'Raquel',
+        'idade' => '20',
         'materia' => 'Biologia',
         'imagem' => './assets/img/professora6.jpg',
         'alt' => 'Professora de Biologia',
@@ -225,6 +237,7 @@ $professores = [
     [
         'numero' => '#11',
         'nome' => 'Tamara',
+        'idade' => '20',
         'materia' => 'Inglês',
         'imagem' => './assets/img/professora7.jpg',
         'alt' => 'Professora de Inglês',
@@ -233,6 +246,7 @@ $professores = [
     [
         'numero' => '#12',
         'nome' => 'André',
+        'idade' => '20',
         'materia' => 'Química',
         'imagem' => './assets/img/professor5.jpg',
         'alt' => 'Professor de Química',
@@ -241,6 +255,7 @@ $professores = [
     [
         'numero' => '#13',
         'nome' => 'Antônio',
+        'idade' => '20',
         'materia' => 'Empreendendo ideias',
         'imagem' => './assets/img/professor6.jpg',
         'alt' => 'Professor de Empreendendo ideias',
@@ -257,6 +272,7 @@ $professores = [
     [
         'numero' => '#15',
         'nome' => 'Janaina',
+        'idade' => '20',
         'materia' => 'Inglês técnico',
         'imagem' => './assets/img/professora9.jpg',
         'alt' => 'Professora de Inglês técnico',
@@ -265,6 +281,7 @@ $professores = [
     [
         'numero' => '#16',
         'nome' => 'Bruno',
+        'idade' => '20',
         'materia' => 'Técnico em Informática',
         'imagem' => './assets/img/professor7.jpg',
         'alt' => 'Instrutor de Informática',
@@ -273,6 +290,7 @@ $professores = [
     [
         'numero' => '#17',
         'nome' => 'Marcelo',
+        'idade' => '42',
         'materia' => 'Técnico em Informática',
         'imagem' => './assets/img/professor8.jpg',
         'alt' => 'Instrutor de informática',
